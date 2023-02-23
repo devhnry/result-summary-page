@@ -122,7 +122,7 @@ button:hover{
 
 .overall__score{
   display: grid;
-  height: 26rem;
+  height: 22.5rem;
   text-align: center;
   border-radius: 0px 0px 30px 30px;
   background: var(--clr-gradient-bg);
@@ -138,10 +138,11 @@ button:hover{
 .overall__score p{
   color: var(--clr-neutral-150);
   padding: 0px 64px;
+  padding-bottom: 1.5rem;
 }
 
 .sub_heading{
-  padding-top: 16px;
+  padding-top: 2rem;
 }
 
 .circle{
