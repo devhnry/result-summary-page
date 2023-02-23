@@ -1,16 +1,16 @@
 /* Variables  */
 :root{
   --clr-primary-100: hsl(0, 100%, 67%);
-  --clr-primary-150: hsla(0, 100%, 67%, 0.1);
+  --clr-primary-150: hsla(0, 100%, 67%, 0.2);
 
   --clr-primary-200: hsl(39, 100%, 56%);
-  --clr-primary-250: hsla(39, 100%, 56%, 0.1);
+  --clr-primary-250: hsla(39, 100%, 56%, 0.2);
 
   --clr-primary-300: hsl(166, 100%, 37%);
-  --clr-primary-350: hsla(166, 100%, 37%, 0.1);
+  --clr-primary-350: hsla(166, 100%, 37%, 0.2);
 
   --clr-primary-400: hsl(234, 85%, 45%);
-  --clr-primary-450: hsla(234, 85%, 45%, 0.1);
+  --clr-primary-450: hsla(234, 85%, 45%, 0.2);
 
 
   --clr-gradient-bg: linear-gradient(to bottom,  hsl(252, 100%, 67%) , hsl(241, 81%, 54%));
@@ -21,6 +21,8 @@
   --clr-neutral-200: hsl(221, 100%, 96%);
   --clr-neutral-300: hsl(241, 100%, 89%);
   --clr-neutral-400: hsl(224, 30%, 27%);
+  --clr-neutral-450: hsla(224, 30%, 27%, 0.5);
+
 
   --ff-body: 'Hanken Grotesk', sans-serif;
 
@@ -108,8 +110,9 @@ button{
   color: var(--clr-neutral-100);
   border: none;
   border-radius: 30px;
-  width: 299px;
+  width: 298px;
   padding: 16px;
+  margin-top: 18px;
   cursor: pointer;
 }
 
@@ -122,7 +125,6 @@ button:hover{
 
 .overall__score{
   display: grid;
-  height: 22.5rem;
   text-align: center;
   border-radius: 0px 0px 30px 30px;
   background: var(--clr-gradient-bg);
@@ -137,8 +139,9 @@ button:hover{
 
 .overall__score p{
   color: var(--clr-neutral-150);
-  padding: 0px 64px;
+  padding: 0px 40px;
   padding-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .sub_heading{
@@ -164,5 +167,63 @@ button:hover{
   color: var(--clr-neutral-150);
 }
 
+.detailed__scores{ 
+  padding: 24px 36px;
+  display: grid;
+  place-content: center;
+}
 
+.detailed__scores h1{
+  margin-bottom: 18px;
+  font-size: 1.5rem;
+  
+}
+
+.detailed__scores > div{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  padding: 18px 16px;
+  height: 3.5rem;
+  border-radius: 10px;
+}
+
+.detailed__scores  p:first-child{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.detailed__scores img{
+  padding-right: 8px;
+}
+
+.score{
+  color: var(--clr-neutral-400);
+}
+
+.score span{
+  color: var(--clr-neutral-450)
+}
+
+.reaction{
+  background: var(--clr-primary-150);
+  color: var(--clr-primary-100);
+}
+
+.memory{
+  background: var(--clr-primary-250);
+  color: var(--clr-primary-200);
+}
+
+.verbal{
+  background: var(--clr-primary-350);
+  color: var(--clr-primary-300);
+}
+
+.visual{
+  background: var(--clr-primary-450);
+  color: var(--clr-primary-400);
+}
 /* Utility Classes  */
